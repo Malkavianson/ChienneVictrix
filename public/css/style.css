@@ -3,19 +3,28 @@
 	padding: 0px;
 	margin:	0px;
 }
+html{
+	font-size: 1vw;
+	font-family: 'Euphoria Script', cursive;
+}
 body{
-	height:	auto;
-	width: 98.7vw;
+	height:	100vh;
+	width: 100vw;
+	background-color: #190321;
+	background-image: url(../img/bgLandscape.jpeg);
+	background-position: center;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
+    flex-wrap: nowrap;
 }
 header{
 	z-index: 1;
-	height: 30vh;
+	height: 30%;
 	width: 100%;
-	position: fixed;
-	background: purple;
+	background-color: rgba(190, 030, 210, 0.2);
 }
 a{
 	text-decoration: none;
@@ -24,20 +33,19 @@ a{
 h1{
 	height:	fit-content;
 	width:	100%;
-	font-family: 'Euphoria Script', cursive;
 	text-shadow: -0.1rem 0.1rem 0.2rem fuchsia;
 	font-size:	2rem;
 }
 h2{
 	height:	fit-content;
 	width:	100%;
-	font-family: 'Euphoria Script', cursive;
+	text-align: center;
 	font-size: 2.5rem;
-	text-shadow: -0.2rem 0.1rem #190321;}
+	text-shadow: -0.2rem 0.1rem #190321;
+}
 h3{
 	height:	fit-content;
 	width:	100%;
-	font-family: 'Euphoria Script', cursive;
 	font-size:	0.8rem;
 	color: gray;
 	text-decoration: underline;
@@ -45,33 +53,38 @@ h3{
 p{
 	height:	fit-content;
 	width: 100%;
-	font-family: 'Euphoria Script', cursive;
+	padding: 5% 0%;
 	font-size: 1.5rem;
 	font-weight: 900;
 	color: #190321;
 	text-align: center;
 	font-style: oblique;
-	text-shadow: -0.05rem 0.05rem 0.2em #ffffff;
+	text-shadow: -0.05rem 0.05rem 1rem #FFDDFF;
 }
 main{
-	height: auto;
-	width:	90%;
+	height: max-content;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
-	padding: 2%;
+	overflow-y: scroll;
+	background-color: rgba(190, 030, 210, 0.2);
+}
+main::-webkit-scrollbar {
+  width: 0.7rem;
+  background: rgba(255, 255, 255, 0);
 }
 section#profile{
 	z-index: 1;
-	position: fixed;
 	width:	25%;
+	margin: 5%;
 }
 div#card{
 	width: 100%;
     aspect-ratio: 1;
-    background: rgb(190 30 210 / 60%);
+    background: rgba(190, 30, 210, 0.6);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 	flex-direction: column;
 	color: #FFAAEf;
 	border-width: 0.5vw;
@@ -93,12 +106,12 @@ div#left>img{
 	max-width: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
+	padding: 5% 0%;
 }
 section#tree{
 	position: relative;
 	margin-left: 30%;
-	margin-top: 25.1vh;
-	height: auto;
+	height: max-content;
 	width:	70%;
 	padding: 2%;
 }
@@ -113,6 +126,7 @@ div#social{
 	flex-direction:	column;
 	gap: 0.5rem;
 	padding: 0% 2%;
+	padding: 2%;
 }
 .card{
 	width:	75%;
@@ -143,6 +157,6 @@ div#social{
 }
 footer{
 	width: 100%;
-	height: 5vh;
-	background: purple;
+	height: 5%;
+	background-color: rgba(190, 030, 210, 0.2);
 }
