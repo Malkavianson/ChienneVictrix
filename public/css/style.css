@@ -3,17 +3,32 @@
 	padding: 0px;
 	margin:	0px;
 }
+@media(orientation: portrait){
+	html{
+		font-size: 1.5vh;
+	}
+	body{
+		background-image: url(../img/bgPortrait.jpg);
+	}
+}
+@media(orientation: landscape){
+	html{
+		font-size: 1vw;
+	}
+	body{
+		background-image: url(../img/bgLandscape.jpeg);
+	}
+}
 html{
-	font-size: 1vw;
 	font-family: 'Euphoria Script', cursive;
 }
 body{
 	height:	100vh;
 	width: 100vw;
 	background-color: #190321;
-	background-image: url(../img/bgLandscape.jpeg);
-	background-position: center;
 	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -27,8 +42,14 @@ header{
 	background-color: rgba(190, 030, 210, 0.2);
 }
 a{
+	height: 25%;
+	width: 100%;
 	text-decoration: none;
 	color: #190321;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: stretch;
 }
 h1{
 	height:	fit-content;
@@ -44,11 +65,12 @@ h2{
 	text-shadow: -0.2rem 0.1rem #190321;
 }
 h3{
-	height:	fit-content;
-	width:	100%;
+	height: fit-content;
+	width: 65%;
 	font-size:	0.8rem;
 	color: gray;
 	text-decoration: underline;
+	overflow-wrap: anywhere;
 }
 p{
 	height:	fit-content;
@@ -62,9 +84,10 @@ p{
 	text-shadow: -0.05rem 0.05rem 1rem #FFDDFF;
 }
 main{
-	height: max-content;
+	height: 65%;
 	width: 100%;
 	display: flex;
+	justify-content: center;
 	flex-direction: row;
 	overflow-y: scroll;
 	background-color: rgba(190, 030, 210, 0.2);
@@ -110,17 +133,17 @@ div#left>img{
 }
 section#tree{
 	position: relative;
+	height: 100%;
+	width: 100%;
 	margin-left: 30%;
-	height: max-content;
-	width:	70%;
 	padding: 2%;
 }
 div#socials{
-	height: auto;
+	height: 100%;
 	width:	100%;
 }
 div#social{
-	height: auto;
+	height: 100%;
 	width:	80%;
 	display: flex;
 	flex-direction:	column;
@@ -129,7 +152,7 @@ div#social{
 	padding: 2%;
 }
 .card{
-	width:	75%;
+	height: 80%;
 	aspect-ratio: 5;
 	border-radius: 1vw;
 	box-shadow: inset 0 0 1vw fuchsia, 0 0 1vw #190321;
@@ -152,7 +175,7 @@ div#social{
     justify-content: space-around;
 }
 .card img{
-	width: 15%;
+	height: 90%;
 	aspect-ratio: 1;
 }
 footer{
