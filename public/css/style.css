@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+*{
+	padding: 0px;
+	margin:	0px;
+}
+body{
+	height:	auto;
+	width: 98.7vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+header{
+	z-index: 1;
+	height: 30vh;
+	width: 100%;
+	position: fixed;
+	background: purple;
+}
+a{
+	text-decoration: none;
+	color: #190321;
+}
+h1{
+	height:	fit-content;
+	width:	max-content;
+	font-family: 'Euphoria Script', cursive;
+	text-shadow: -0.1rem 0.1rem 0.2rem fuchsia;
+	font-size:	2rem;
+}
+h2{
+	height:	fit-content;
+	width:	max-content;
+	font-family: 'Euphoria Script', cursive;
+	font-size: 2.5rem;
+	text-shadow: -0.2rem 0.1rem #190321;}
+h3{
+	height:	fit-content;
+	width:	max-content;
+	font-family: 'Euphoria Script', cursive;
+	font-size:	0.8rem;
+	color: gray;
+	text-decoration: underline;
+}
+p{
+	height:	fit-content;
+	width: 100%;
+	font-family: 'Euphoria Script', cursive;
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: #190321;
+	text-align: center;
+	font-style: oblique;
+	text-shadow: -0.05rem 0.05rem 0.2em #ffffff;
+}
+main{
+	height: auto;
+	width:	90%;
+	display: flex;
+	flex-direction: row;
+	padding: 2%;
+}
+section#profile{
+	z-index: 1;
+	position: fixed;
+	width:	25%;
+}
+div#card{
+	width: 100%;
+    aspect-ratio: 1;
+    background: rgb(190 30 210 / 60%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+	flex-direction: column;
+	color: #FFAAEf;
+	border: ridge 0.5rem #FFAAEF;
+	border-radius: 2.5rem;
+}
+div#left,div#right{
+	height: 20%;
+	width: 75%;
+}
+div#right{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+div#left>img{
+	max-width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+section#tree{
+	position: relative;
+	margin-left: 30%;
+	margin-top: 25.1vh;
+	height: auto;
+	width:	70%;
+	padding: 2%;
+}
+div#socials{
+	height: auto;
+	width:	100%;
+}
+div#social{
+	height: auto;
+	width:	80%;
+	display: flex;
+	flex-direction:	column;
+	gap: 0.5rem;
+	padding: 0% 2%;
+}
+.card{
+	width:	75%;
+	aspect-ratio: 5;
+	border:	solid 0.1rem fuchsia;
+	background: white;
+	display: flex;
+	align-items: center;
+	padding: 1%;
+	justify-content: space-evenly;
+}
+.card:hover{
+	transform: scale(1.01)
+}
+.card>div{
+	height: 75%;
+    width: 75%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.card img{
+	width: 15%;
+	aspect-ratio: 1;
+}
+footer{
+	width: 100%;
+	height: 5vh;
+	background: purple;
+}

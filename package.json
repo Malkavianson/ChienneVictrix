@@ -1,0 +1,37 @@
+{
+  "name": "chiennevictrixhost",
+  "version": "1.0.0",
+  "description": "Chienne Victrix fanPage",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+	"dev": "nodemon index.js -e js, html, css, ejs"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malkavianson/ChienneVictrix.git"
+  },
+  "keywords": [
+    "[\"model\"",
+    "\"alternative\"",
+    "\"pack\"",
+    "\"girl\"]"
+  ],
+  "author": "@Malkavianson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malkavianson/ChienneVictrix/issues"
+  },
+  "homepage": "https://github.com/Malkavianson/ChienneVictrix#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.17.3"
+  }
+}

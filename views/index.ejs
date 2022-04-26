@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+	
+		<title>Chienne Victrix @chiennevictrix</title>
+		
+		<meta charset='uft-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<!-- <link rel='icon' href=''> -->
+		
+		<link rel='stylesheet' href='/css/style.css'>
+
+	</head>
+	
+	<body>
+		<%- include('./partials/header.ejs') %>
+		<main>
+			<section id='profile'>
+				<div id='card'>
+					<div id='left'>
+						<img src="<%= contact.picture%>">
+					</div>
+					<div id='right'>
+						<h2><%= contact.name%></h2>
+						<p><%= contact.nick%></p>
+					</div>
+					<p><%= contact.description%></p>
+				</div>
+			</section>
+			<section id='tree'>
+				<div id='socials'>
+					<div id='social'>
+						<% social.forEach((s) => { %>
+							<a href="<%= s.description%>" target="__blank">
+								<div class='card'>
+									<img src="<%= s.picture %>" alt="<%= s.name%> logo">
+									<div>
+										<h1><%= s.name%></h1>
+										<h3><%= s.description%></h3>
+									</div>
+								</div>
+							</a>
+						<% }) %>
+					</div>
+				</div>
+			</section>
+		</main>
+		<%- include('./partials/footer.ejs') %>
+		<!-- <script src="/js/scripts.js"></script> -->
+	</body>
+</html>
