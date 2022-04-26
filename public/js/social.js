@@ -38,7 +38,7 @@ export default {
 		},
 		{
 			name: 'Snapchat',
-			description: 'https://www.snapchat.com/add/https://www.snapchat.com/add/chiennevictrix?share_id=c-U1-WTL3qo&locale=pt-BR',
+			description: 'https://www.snapchat.com/add/chiennevictrix?share_id=yhdoDeWNM2c&locale=pt-BR',
 			picture: 'img/snapchat.png',
 			id: 6,
 		},
