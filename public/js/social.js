@@ -38,13 +38,13 @@ export default {
 		},
 		{
 			name: 'Snapchat',
-			description: 'https://allmylinks.com/link/out?id=6c0ppv-1f081-1tl4jnm',
+			description: 'https://www.snapchat.com/add/https://www.snapchat.com/add/chiennevictrix?share_id=c-U1-WTL3qo&locale=pt-BR',
 			picture: 'img/snapchat.png',
 			id: 6,
 		},
 		{
 			name: 'Tumblr',
-			description: 'https://privacy.com.br/Checkout/ChienneVictrix/',
+			description: 'https://saoko-stuffs.tumblr.com/',
 			picture: 'img/tumblr.jpg',
 			id: 7,
 		},
