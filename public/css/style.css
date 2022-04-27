@@ -11,7 +11,7 @@
 		background-image: url(../img/bgPortrait.jpg);
 	}
 	section#profile{
-		max-height: 90%;
+		height: 85%;
 	}
 	div#socials{
 		display: flex;
@@ -20,6 +20,9 @@
 	}
 	div#social{
 		width: 80%;
+	}
+	div#share{
+		width: 30%;
 	}
 }
 @media(orientation: landscape){
@@ -30,7 +33,7 @@
 		background-image: url(../img/bgLandscape.jpeg);
 	}
 	section#profile{
-		max-width: 25%;
+		width: 25%;
 	}
 	div#socials{
 		display: flex;
@@ -39,6 +42,9 @@
 	}
 	div#social{
 		width: 35%;
+	}
+	div#share{
+		width: 10%;
 	}
 }
 html{
@@ -57,12 +63,6 @@ body{
 	align-items: center;
 	justify-content: space-between;
     flex-wrap: nowrap;
-}
-header{
-	z-index: 1;
-	height: 30%;
-	width: 100%;
-	background-color: rgba(190, 030, 210, 0.2);
 }
 a{
 	height: 25%;
@@ -106,18 +106,59 @@ p{
 	font-style: oblique;
 	text-shadow: -0.05rem 0.05rem 1rem #FFDDFF;
 }
-main{
-	height: 65%;
+header{
+	z-index: 1;
+	height: 30%;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	overflow-y: scroll;
 	background-color: rgba(190, 030, 210, 0.2);
+	display: flex;
+	justify-content: space-between;
+    align-items: flex-start;
 }
-main::-webkit-scrollbar {
-  width: 0.7rem;
-  background: rgba(255, 255, 255, 0);
+div#share{
+	height: 80%;
+	margin: 2%;
+}
+div#sharebtn{
+	width: 40%;
+	aspect-ratio: 1;
+	background: white;
+	background-image: url(../img/shr.png);
+	background-repeat: no-repeat;
+	background-position: 40% 35%;
+	background-size: 50%;
+	border-width: 0.5vw;
+	border-style: ridge groove groove ridge;
+	border-color: #FFAAEF;
+	border-radius: 2.5rem;
+	box-shadow: inset 0 0 1rem fuchsia, 0 0 1rem #190321;
+}
+div#share:hover{
+	transform: scale(0.9)
+}
+nav#navbar{
+	height: 160%;
+	font-size: 2rem;
+	display: flex;
+    align-items: center;
+	background: #f5c8bf;
+	border-radius: 1rem;
+    clip-path: polygon(100% 0%, 0% 0%, 0% 0%, 100% 0%);
+	transition: clip-path 0.3s;
+	text-align: center;
+}
+div#share:hover nav#navbar{
+    clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
+}
+ul#nav{
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+ul#nav>li:hover{
+	background: #fdf1cc;
+	font-size: 2.1rem;
 }
 section#profile{
 	z-index: 1;
@@ -125,7 +166,7 @@ section#profile{
 	margin: 5%;
 }
 div#card{
-	width: 100%;
+	height: 100%;
     aspect-ratio: 1;
     background: rgba(190, 30, 210, 0.6);
     display: flex;
@@ -153,6 +194,19 @@ div#left>img{
     aspect-ratio: 1;
     border-radius: 50%;
 	padding: 5% 0%;
+}
+main{
+	height: 65%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	overflow-y: scroll;
+	background-color: rgba(190, 030, 210, 0.2);
+}
+main::-webkit-scrollbar {
+  width: 0.7rem;
+  background: rgba(255, 255, 255, 0);
 }
 section#tree{
 	position: relative;
