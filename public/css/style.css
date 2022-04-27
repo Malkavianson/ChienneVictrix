@@ -169,6 +169,14 @@ div#social{
 	flex-direction:	column;
 	gap: 0.5rem;
 }
+@keyframes mv {
+	50% {
+		transform: scale(0.995);
+	}
+}
+div#social>a:nth-child(3)>div{
+	animation: mv 2s infinite;
+}
 .card{
 	height: 80%;
 	aspect-ratio: 5;
