@@ -137,7 +137,7 @@ div#sharebtn {
 div#share:hover {
 	transform: scale(0.98);
 }
-div#share:active {
+div#sharebtn:active {
 	background-color: rgba(190, 030, 210, 0.5);
 }
 nav#navbar {
