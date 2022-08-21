@@ -118,7 +118,7 @@ header {
 div#share {
   height: 80%;
   margin: 2%;
-  transition: 4.2s;
+  transition: 0.420s;
 }
 div#sharebtn {
   width: 40%;
@@ -135,7 +135,10 @@ div#sharebtn {
   box-shadow: inset 0 0 1rem fuchsia, 0 0 1rem #190321;
 }
 div#share:hover {
-  transform: scale(0.9);
+	transform: scale(0.9);
+}
+div#share:active {
+	background-color: rgba(190, 030, 210, 0.5);
 }
 nav#navbar {
   height: 160%;
@@ -156,7 +159,7 @@ ul#nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  transition: 4.2s;
+  transition: 0.420s;
 }
 ul#nav > li:hover {
   background: #fdf1cc;
@@ -244,7 +247,7 @@ div#social > a:nth-child(3) > div {
   align-items: center;
   padding: 1%;
   justify-content: space-evenly;
-  transition: 4.2s;
+  transition: 0.420s;
   transform: scale(1.01);
 }
 .card:hover {
