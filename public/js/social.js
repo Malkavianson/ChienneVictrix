@@ -6,16 +6,16 @@ export default {
       picture: "img/privacy.png",
       id: 0,
     },
+	{
+	  name: "Twitter",
+	  description: "https://twitter.com/ChienneVictrix",
+	  picture: "img/twitter.png",
+	  id: 1,
+	},
     {
       name: "Telegram",
       description: "https://t.me/ChienneVictrixCanal",
       picture: "img/telegram.jpg",
-      id: 1,
-    },
-    {
-      name: "Twitter",
-      description: "https://twitter.com/ChienneVictrix",
-      picture: "img/twitter.png",
       id: 2,
     },
     {
