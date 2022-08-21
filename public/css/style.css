@@ -248,7 +248,7 @@ div#social > a:nth-child(3) > div {
   transform: scale(1.01);
 }
 .card:hover {
-  transition: 4.2s;
+	transform: scale(0.9)
 }
 .card > div {
   height: 75%;
