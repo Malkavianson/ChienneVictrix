@@ -135,7 +135,7 @@ div#sharebtn {
   box-shadow: inset 0 0 1rem fuchsia, 0 0 1rem #190321;
 }
 div#share:hover {
-	transform: scale(0.9);
+	transform: scale(0.98);
 }
 div#share:active {
 	background-color: rgba(190, 030, 210, 0.5);
@@ -248,10 +248,9 @@ div#social > a:nth-child(3) > div {
   padding: 1%;
   justify-content: space-evenly;
   transition: 0.420s;
-  transform: scale(1.01);
 }
 .card:hover {
-	transform: scale(0.9)
+	transform: scale(1.05)
 }
 .card > div {
   height: 75%;
