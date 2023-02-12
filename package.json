@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/Malkavianson/ChienneVictrix#readme",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
     "ejs": "^3.1.7",
